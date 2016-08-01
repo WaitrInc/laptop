@@ -1,0 +1,15 @@
+#!/bin/sh
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"
+brew bundle --file=- <<EOF
+
+# Android
+cask "androidtool"
+cask "android-studio"
+
+# iOS
+brew "xctool"
+brew "cocoapods"
+EOF
+
+#iOS
+gem install gym frameit snapshot sigh deliver cert spaceship scan supply screengrab

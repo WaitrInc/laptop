@@ -1,0 +1,21 @@
+#!/bin/sh
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"
+
+brew bundle --file=- <<EOF
+
+# AWS
+brew "awscli"
+brew "aws-elasticbeanstalk"
+
+brew "nvm"
+brew "composer"
+
+# Waitr Stack
+brew "terraform"
+brew "swagger-codegen"
+
+# Databases
+brew "postgres", restart_service: true
+brew "redis", restart_service: true
+
+EOF

@@ -110,10 +110,6 @@ brew "tmux"
 brew "vim"
 brew "zsh"
 
-# Heroku
-brew "heroku-toolbelt"
-brew "parity"
-
 # GitHub
 brew "hub"
 

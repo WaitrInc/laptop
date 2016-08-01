@@ -1,0 +1,25 @@
+#!/bin/sh
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"
+
+brew bundle --file=- <<EOF
+
+# Desktop Applications
+cask "alfred"
+cask "dash"
+cask "google-chrome"
+cask "postman"
+cask "iterm2"
+cask "zeplin"
+cask "coderunner"
+cask "cheatsheet"
+
+# Database GUIs
+cask "medis"
+cask "mysqlworkbench"
+
+# Communication
+cask "slack"
+
+# Text Editors
+cask "sublime"
+EOF
